@@ -34,6 +34,11 @@
     <type>org.exoplatform.social.extras.injection.SpaceInjector</type>
   </component>
 
+  <!-- Custom Space Injector for a per user space creation -->
+  <component>
+    <type>org.exoplatform.social.extras.injection.CustomSpaceInjector</type>
+  </component>
+
   <component>
     <type>org.exoplatform.social.extras.injection.MembershipInjector</type>
   </component>
@@ -69,6 +74,11 @@
       <name>space</name>
       <set-method>addInjector</set-method>
       <type>org.exoplatform.social.extras.injection.SpaceInjector</type>
+    </component-plugin>
+    <component-plugin>
+      <name>custom-space-injector</name>
+      <set-method>addInjector</set-method>
+      <type>org.exoplatform.social.extras.injection.CustomSpaceInjector</type>
     </component-plugin>
     <component-plugin>
       <name>membership</name>
